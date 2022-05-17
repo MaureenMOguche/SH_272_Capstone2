@@ -93,10 +93,7 @@ button:active {
     transform: scale(0.98);
 }
 
-form input{
-    outline: none;
-}
-form input:focus{
+.form-control:focus{
     border: 2px solid var(--accent-color);
 }
 
