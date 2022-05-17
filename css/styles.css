@@ -1,0 +1,256 @@
+
+:root {
+    --main-color: #03bb85;
+    --accent-color: crimson;
+}
+
+
+img.logo {
+    text-shadow: 0 0 20px white;
+    border:3px solid white;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    align-items: center;
+    font-size: 1rem;
+}
+
+ul.topnav li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.topnav li a {
+    padding: 0 20px;
+    color:white;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+ul.topnav li a:hover{
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+.mobile-menu {
+    font-size: 2.7rem;
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+
+.container {
+    overflow-x: hidden;
+    box-shadow: 2px 2px 12px black;
+}
+
+form {
+    padding: 2rem;
+}
+
+.row {
+    border-radius: 12px;
+}
+.col-5 {
+    background-color: var(--main-color);
+    text-align: center;
+    color:white;
+    
+}
+
+.pair-img {
+    width: 100%;
+}
+
+.gender {
+    margin-top: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    border:none;
+    padding:10px;
+    font-size: 1.2rem;
+    border-radius:30px;
+    width: 60%;
+    margin: 4% 0;
+    color:white;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+form input{
+    outline: none;
+}
+form input:focus{
+    border: 2px solid var(--accent-color);
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear{
+    display:none;
+}
+
+
+/* styling the icons */
+.left-addon-box{
+    padding:6px;
+    border-radius: 3px;
+    border:1px solid lightgray;
+}
+
+.right{
+    padding:4px 15px 6px 2px;
+}
+
+form i.i-green {
+    color: var(--main-color);
+}
+
+.error-icon {
+    color:red;
+}
+.success-icon {
+    color:green;
+}
+
+.error-icon,
+.success-icon,
+.bi-eye,
+.bi-eye-slash{
+    position: absolute;
+    padding: 6px 15px 6px 0px;
+}
+
+.error-icon,
+.success-icon,
+.bi-eye-slash{
+    opacity: 0;
+}
+
+.bi-eye,
+.bi-eye-slash {
+    cursor: pointer;
+    right:6px;
+    z-index: 4;
+}
+
+.error-text {
+    color:red;
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+/* footer section */
+footer {
+    background-color: black;
+    color:white;
+    margin-top: 5%;
+    padding:2% 10%;
+}
+
+.copy p{
+    width:100%;
+    text-align: center;
+    margin-bottom: 4%;
+    text-shadow: 0 0 30px var(--accent-color);
+}
+
+.team-members {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    font-size: .9rem;
+}
+
+.team-members p {
+    margin: 2px 0;
+    padding:0;
+}
+
+.foot-logo{
+    margin-top: 1rem;
+}
+
+span.lead {
+    font-size: .9rem;
+    color: var(--accent-color);
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+}
+
+/* mobile section */
+
+@media (max-width:768px) {
+    nav {
+        padding:5%;
+        position: relative;
+    }
+
+    ul.topnav {
+        width:50%;
+        height:100vh;
+        background-color:black;
+        position:fixed;
+        top:13%;
+        z-index: 2;
+        transition:all .7s ease;
+    }
+
+    .display {
+        left: 0;
+    }
+    .not-display {
+        left:-100%;
+    }
+
+    
+
+    ul.topnav li {
+        display: block;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .col-5, 
+    .col-7{
+        width: 100%;
+    }
+
+    footer,
+    .team-members{
+        display: block;
+        font-size: .7rem;
+    }
+    .batch {
+        margin:.7rem 0;
+    }
+
+}
