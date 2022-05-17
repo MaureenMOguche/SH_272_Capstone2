@@ -117,15 +117,28 @@ form.addEventListener('submit',(e)=> {
 
 // eye display password
 
-const seePassword = document.getElementsByClassName("bi-eye");
-const closePassword = document.getElementsByClassName("bi-eye-slash");
+const toggle = document.getElementsByClassName('toggle');
 
+function seePassword(){
 
+    if(password.type ==='password'){
+        password.setAttribute('type', 'text');
+        toggle[0].classList.add('hide')
+    }
+    else{
+        password.setAttribute('type', 'password');
+        toggle[0].classList.remove('hide')
+    }
 
-seePassword[0].addEventListener('click',()=>{
-    const type = seePassword[0].getAttribute("type")
-    type = 'text';
-    
-})
+}
 
-
+function seePassword2(){
+    if(password2.type ==='password'){
+        password2.setAttribute('type', 'text');
+        toggle[1].classList.add('hide')
+    }
+    else{
+        password2.setAttribute('type', 'password');
+        toggle[1].classList.remove('hide')
+    }
+}

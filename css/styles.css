@@ -140,12 +140,23 @@ form i.i-green {
     opacity: 0;
 }
 
-.bi-eye,
-.bi-eye-slash {
-    cursor: pointer;
-    right:6px;
+.toggle{
+    background: url("../images/eye-regular.svg");
+    background-size: cover;
+    width:20px;
+    height: 18px;
+    position: absolute;
+    right: 26px;
+    top: 10px;
     z-index: 4;
+    cursor: pointer;
 }
+
+.toggle.hide{
+    background: url("../images/eye-slash-regular.svg");
+    background-size: cover;
+}
+
 
 .error-text {
     color:red;
